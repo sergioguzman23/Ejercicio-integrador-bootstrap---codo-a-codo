@@ -1,0 +1,17 @@
+
+.carousel-caption {
+    position: top;
+    margin-left: 650px;
+    bottom: 500px;
+    width: 40%;
+    text-align: end;
+    }
+
+.bg-footer{
+    background-color: rgba(3, 63, 104, 0.884);
+}
+.a-reset{
+    color:white;
+    text-decoration: none;
+}
+    
