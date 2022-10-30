@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header  class="container-fluid header g-0">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="imagenes/codoacodo.png" alt="Logo" width="60" height="54" class="d-inline-block align-text-center">
+        Conf Bs As
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+        
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">La Conferencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Los Oradores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">El Lugar y la Fecha</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Convierte en Orador</a>
+          </li>
+        </div>
+       </div>   
+        </nav>
+      </header>
+
+    <!-- TICKETS -->
+
+    <div id="tickets" class="tickets">
+        <div class="container-tickets">
+            <div class="tickets-category">
+                <div class="estudiante">
+                    <h3>Estudiante</h3>
+                    <h5>Tiene un descuento</h5>
+                    <h2>80%</h2>
+                    <h6>* presentar documentación</h6>
+                </div>
+                <div class="trainee">
+                    <h3>Trainee</h3>
+                    <h5>Tiene un descuento</h5>
+                    <h2>50%</h2>
+                    <h6>* presentar documentación</h6>
+                </div>
+                <div class="junior">
+                    <h3>Junior</h3>
+                    <h5>Tiene un descuento</h5>
+                    <h2>15%</h2>
+                    <h6>* presentar documentación</h6>
+                </div>
+            </div>
+            <div class="tickets-text">
+                <h6>VENTA</h6>
+                <h1>VALOR DE TICKET $200</h1>
+            </div>
+<br><br>
+
+  <!-- FORMULARIO -->
+
+
+<section>
+            <form action="">
+              <div class="row gx-2">
+                  <div class="col-md mb-3">
+                      <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" id="nombre" required>
+                  </div>
+                  <div class="col-md mb-3">
+                      <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" id="apellido" required>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col mb-3">
+                      <input type="email" class="form-control" placeholder="Email" aria-label="Email" id="mail" required>
+                  </div>
+              </div>
+              <div class="row gx-2">
+                  <div class="col-md mb-3">
+                      <label for="cantidadTickets" class="form-label">Cantidad</label>
+                      <input type="number" class="form-control" placeholder="Cantidad" aria-label="Cantidad" id="cantidadTickets" min="1" required>
+                  </div>
+                  <div class="col-md mb-3">
+                      <label for="categoriaSelect" class="form-label">Categoría</label>
+                      <select class="form-select" aria-label="Categoría" id="categoriaSelect">
+                          <option value="" selected>-- Seleccione --</option>
+                          <option value="0">Sin Categoria</option>
+                          <option value="1">Estudiante</option>
+                          <option value="2">Trainee</option>
+                          <option value="3">Junior</option>
+                      </select>
+                  </div>
+              </div>
+              <div class="alert alert-primary mt-2 mb-4" role="alert">
+                  Total a pagar: $ <span id="totalPago" class="align-middle"></span>
+              </div>
+              <div class="row gx-2">
+                  <div class="col-md mb-3">
+                      <button type="reset" class="w-100 btn btn-success btn-lg btn-form" id="btnBorrar">Borrar</button>
+                  </div>
+                  <div class="col-md mb-3">
+                      <button type="button" class="w-100 btn btn-success btn-lg btn-form" id="btnResumen">Resumen</button>
+                  </div>
+              </div>
+          </form>
+      </div>
+  </div>
+</section>
+
+<script src="comprar-tickets.js"></script>
+</body>
+</html>

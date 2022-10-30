@@ -3,7 +3,7 @@
     position: top;
     margin-left: 650px;
     bottom: 500px;
-    width: 40%;
+    width: 39%;
     text-align: end;
     }
 
@@ -14,4 +14,77 @@
     color:white;
     text-decoration: none;
 }
+
+
+.tickets .container-tickets {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .tickets-category {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 1rem;
+  }
+  
+  .tickets-category .estudiante,
+  .trainee,
+  .junior {
+    width: 30%;
+    min-width: 180px;
+    height: auto;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.5rem 0.5rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  
+  .tickets-category h2 {
+    font-size: 1.5rem;
+    }
+  
+  .tickets-category h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  .tickets-category h5 {
+    font-size: 1rem;
+    color: var(--gray-700);
+  }
+  
+  .tickets-category h6 {
+    font-size: 0.7rem;
+    color: var(--gray-600);
+  }
+  
+  .tickets-category .estudiante {
+    border-radius: 5px;
+    border: 2px solid blue;
+  }
+  
+  
+  .tickets-category .trainee {
+    border-radius: 5px;
+    border: 2px solid green;
+  }
+  
+  .tickets-category .junior {
+    border-radius: 5px;
+    border: 2px solid orange;
+  }
+  
+  
+  .container-tickets .tickets-text {
+    text-align: center;
+  }
     
+
+  .container-tickets .tickets-text {
+    text-align: center;
+  }
+  
